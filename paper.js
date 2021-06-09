@@ -10,7 +10,7 @@ class Paper{
     }
 
     this.image=loadImage("paper.png");
-    this.body=Bodies.ellipse(x, y, this.r,options);
+    this.body=Bodies.circle(x, y, this.r,options);
 
  		World.add(world, this.body);
     }
@@ -20,8 +20,8 @@ class Paper{
 
         push()
         translate(groundPos.x, groundPos.y);
-        rectMode(CENTER)
-        ellipse(0,0,this.width, this.height);
+        ellipseMode(RADIUS)
+        ellipse(0,0,this.r, this.r);
         pop()
     }
 }

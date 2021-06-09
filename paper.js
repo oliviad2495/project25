@@ -10,7 +10,7 @@ class Paper{
     }
 
     this.image=loadImage("paper.png");
-    this.body=Bodies.ellipse(this.x, this.y, this.r=10,options);
+    this.body=Bodies.ellipse(x, y, this.r,options);
 
  		World.add(world, this.body);
     }
